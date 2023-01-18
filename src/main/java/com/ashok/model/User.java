@@ -7,6 +7,7 @@ public class User {
 	private String email;
 	private Long phno;
 	private String gender;
+	private String address;
 
 
 	public String getUname() {
@@ -32,10 +33,17 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	@Override
 	public String toString() {
-		return "User [uname=" + uname + ", pwd=" + pwd + ", email=" + email + "]";
+		return "User [uname=" + uname + ", pwd=" + pwd + ", email=" + email + ", address=" +address"]";
 	}
 
 }
